@@ -64,9 +64,26 @@
             <ul class="navbar-nav ml-auto" style='letter-spacing: 0.1em;'>
              
               <li class="nav-item">
-                <a href="{{path('projects')}}" class="nav-link" id='getStarted' >
-                    Projects
-                </a>
+                <div class="dropdown">
+                  <a class="nav-link" id='getStarted' href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Projects
+                  </a>
+                      <!-- Update links -->
+                  <div class="dropdown-menu dropdown-menu-right">
+                      <a href="{{path('projects')}}" class="dropdown-item" style="font-weight:400">Concours</a>
+                      <a href="{{path('projects')}}" class="dropdown-item" style="font-weight:400">Privé</a>
+                      <a href="{{path('projects')}}" class="dropdown-item" style="font-weight:400">Résidentiel</a>
+                      <a href="{{path('projects')}}" class="dropdown-item" style="font-weight:400">Administratif</a>
+                      <a href="{{path('projects')}}" class="dropdown-item" style="font-weight:400">Horeca</a>
+                      <a href="{{path('projects')}}" class="dropdown-item" style="font-weight:400">Intérieur</a>
+                      <a href="{{path('projects')}}" class="dropdown-item" style="font-weight:400">Urbanisme</a>
+                      <a href="{{path('projects')}}" class="dropdown-item" style="font-weight:400">Culture</a>
+                      <a href="{{path('projects')}}" class="dropdown-item" style="font-weight:400">Retail</a>
+                      <a href="{{path('projects')}}" class="dropdown-item" style="font-weight:400">Extérieur</a>
+                      <a href="{{path('projects')}}" class="dropdown-item" style="font-weight:400">Equipment</a>
+                      
+                  </div>
+              </div>
               </li>
               <li class="nav-item">
                 <a href="{{path('press')}}" style='border-bottom:2px solid #E2DCCB' class="nav-link"id='getStarted' >
