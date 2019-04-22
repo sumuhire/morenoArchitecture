@@ -1,0 +1,32 @@
+
+
+# DefaultController Routes
+
+login:
+  path: /login
+  controller: App\Controller\DefaultController::login
+
+index:
+  path:     /
+  controller: App\Controller\DefaultController::index
+
+projects:
+  path:     /projects
+  controller: App\Controller\DefaultController::projectsMenu
+
+project:
+  path:     /projects1
+  controller: App\Controller\DefaultController::project
+
+press:
+  path:     /press
+  controller: App\Controller\DefaultController::pressMenu
+
+about:
+  path:     /about
+  controller: App\Controller\DefaultController::about
+
+logout:
+  path: /logout
+
+

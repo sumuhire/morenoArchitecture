@@ -1,0 +1,274 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Moreno Architecture{% endblock %}
+
+
+{% block header %}
+
+{# NAVBAR
+    ================================================= #}
+    
+    <nav class="navbar navbar-expand-xl navbar-dark navbar-togglable fixed-top" style='flex-flow: row wrap;'>
+        <div class="container" style='flex-direction: row; width: 100%;'>
+  
+            {# Brand #}
+            <a class="navbar-brand" href="{{path('index')}}">
+            
+                <img alt="moreno" id="logo" src="assets/img/LOGO COMPLET MORENO 8019.png" style='width:166px;height:26px' />
+                
+            </a>
+          
+    
+          {# Toggler #}
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseA" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          {# Collapse #}
+            <div class="collapse navbar-collapse" id="navbarCollapseA">
+
+                {# Social #}
+             
+            <ul class=" row navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="{{path('projects')}}" style='border-bottom:2px solid #E2DCCB' class="nav-link" id='getStarted' >
+                        Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{path('press')}}" class="nav-link"id='getStarted' >
+                        Press
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{path('about')}}" class="nav-link" id='getStarted' >
+                        About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#book-a-demo" class="nav-link" id='getStarted' >
+                        Jobs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#book-a-demo" class="nav-link"id='getStarted' >
+                        Contact
+                    </a>
+                </li>
+                <li class="nav-item-divider" >
+                    <span class="nav-link" >
+                    <span></span>
+                    </span>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                    <i class="fab fa-facebook"></i> 
+                    <span class="d-xl-none ml-2">
+                        Facebook
+                    </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                    <i class="fab fa-twitter"></i> 
+                    <span class="d-xl-none ml-2">
+                        Twitter
+                    </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                    <i class="fab fa-instagram"></i> 
+                    <span class="d-xl-none ml-2">
+                        Instagram
+                    </span>
+                    </a>
+                </li> 
+            </ul>
+        </div> {# / .navbar-collapse #}
+        
+        </div> {# / .container #}
+        <div class="container ml-auto" style='flex-direction: row; width: 100%;'>
+            
+            {# Toggler #}
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseB" aria-controls="navbarCollapseB" aria-expanded="false" aria-label="Toggle navigationB">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarCollapseB" style='flex-flow: row wrap;'>
+        <div class='container flex-row ml-auto' style='flex-direction: row;width: 100%;margin-top: 1rem;'>
+                
+                <ul class="navbar-nav ml-auto" style='letter-spacing: 0.1em;border-right:2px solid #E2DCCB;border-left:2px solid #E2DCCB;'>
+                
+                    <li class="nav-item" style='padding-left:.4rem'>
+                        <a href="{{path('projects')}}"  style='color:#151515!important' class="nav-link" id='getStarted' >
+                            Résidentiel
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"style='font-weight:400' >
+                            Adminsitratif
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#book-a-demo" class="nav-link" style='font-weight:400' >
+                            Privé
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#book-a-demo" class="nav-link" style='font-weight:400' >
+                            Culture
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#book-a-demo" class="nav-link"style='font-weight:400' >
+                            Horeca
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{path('projects')}}" class="nav-link" style='font-weight:400' >
+                            Intérieur
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{path('press')}}" class="nav-link"style='font-weight:400' >
+                            Retail
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#book-a-demo" class="nav-link" style='font-weight:400' >
+                            Management
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#book-a-demo" class="nav-link" style='font-weight:400' >
+                            Culture
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#book-a-demo" class="nav-link" style='font-weight:400' >
+                            Retail
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#book-a-demo" class="nav-link" style='font-weight:400' >
+                            Urbanisme
+                        </a>
+                    </li>        
+                    <li class="nav-item" style='padding-right:.4rem'>
+                        <a href="#book-a-demo" class="nav-link" style='font-weight:400;' >
+                            Equipment
+                        </a>
+                    </li>
+                    
+                        
+                    
+                    </ul>
+                </div> 
+        </div> {# / .navbar-collapse #} 
+    </div>   
+      </nav>
+
+      {% endblock %}
+
+      {% block body %}
+<!-- GALLERY
+	================================================== -->
+	<section class="section section_gallery" style='padding-top:10rem!important;padding-right:.1rem!important'>
+            <div class="container" style='padding-left:2.3rem'>
+                <div class="row">
+                    <div class="col">
+        
+                        {# <!-- Heading -->
+                        <h2 class="section__heading text-center">
+                            Our gallery
+                        </h2>
+    
+                        <!-- Subheading -->
+                        <p class="section__subheading text-center">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+         #}
+                    </div>
+                </div> <!-- / .row -->
+                <div class="row section_gallery__grid">
+                    <div class="col-6 col-sm-6 col-md-3 section_gallery__grid__item">
+    
+                        <a href=""  >
+                            <img src="assets/img/a1.jpg" class="img-fluid" alt="...">
+                        </a>
+    
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 section_gallery__grid__item">
+    
+                        <a href="{{path('project')}}"  >
+                            <img src="assets/img/a17.jpg" class="img-fluid" alt="...">
+                        </a>
+    
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 section_gallery__grid__item">
+    
+                        <a href=""  >
+                            <img src="assets/img/a11.jpg" class="img-fluid" alt="...">
+                        </a>
+    
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 section_gallery__grid__item">
+    
+                        <a href=""  >
+                            <img src="assets/img/a23.jpg" class="img-fluid" alt="...">
+                        </a>
+    
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 section_gallery__grid__item">
+    
+                        <a href=""  >
+                            <img src="assets/img/a3.jpg" class="img-fluid" alt="...">
+                        </a>
+    
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 section_gallery__grid__item">
+    
+                        <a href=""  >
+                            <img src="assets/img/a4.jpg" class="img-fluid" alt="...">
+                        </a>
+    
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 section_gallery__grid__item">
+    
+                        <a href=""  >
+                            <img src="assets/img/a5.jpg" class="img-fluid" alt="...">
+                        </a>
+    
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 section_gallery__grid__item">
+    
+                        <a href=""  >
+                            <img src="assets/img/a6.jpg" class="img-fluid" alt="...">
+                        </a>
+    
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 section_gallery__grid__item">
+                        <a href=""  >
+                            <img src="assets/img/a7.jpg" class="img-fluid" alt="...">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 section_gallery__grid__item">
+                        <a href=""  >
+                            <img src="assets/img/a8.jpg" class="img-fluid" alt="...">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 section_gallery__grid__item">
+                        <a href=""  >
+                            <img src="assets/img/a9.jpg" class="img-fluid" alt="...">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 section_gallery__grid__item">
+                        <a href=""  >
+                            <img src="assets/img/a10.jpg" class="img-fluid" alt="...">
+                        </a>
+                    </div>
+                        
+                </div> <!-- / .row -->
+            </div> <!-- / .container -->
+        </section>
+{% endblock %}
