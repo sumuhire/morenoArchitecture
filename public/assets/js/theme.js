@@ -21,10 +21,10 @@ var Navbar = (function() {
 	// =======
 
 	function makeNavbarDark() {
-		$navbar.removeClass('navbar-light').addClass('navbar-dark');
+		$navbar.removeClass('navbar-dark').addClass('navbar-dark');
 	}
 	function makeNavbarLight() {
-		$navbar.removeClass('navbar-dark').addClass('navbar-light');
+		$navbar.removeClass('navbar-dark').addClass('navbar-dark');
 	}
 	function toggleNavbarClass() {
 		var scrollTop = $window.scrollTop();
